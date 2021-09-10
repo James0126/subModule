@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { div, minus, multiple, plus } from "./math/scripts";
+import s from "./test.module.scss";
 
-function App() {
+const App = () => {
+  const plusValue = plus(2, 3);
+  const divValue = div(3, 1);
+  const multipleValue = multiple(3, 3);
+  const minusValue = minus(4, 2);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.front}>
+      <div>plus:{plusValue}</div>
+      <div>div:{divValue}</div>
+      <div>multiple:{multipleValue}</div>
+      <div>minus:{minusValue}</div>
     </div>
   );
-}
+};
 
 export default App;
