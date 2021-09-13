@@ -11,6 +11,7 @@ const App = () => {
 
   return (
     <div className={s.front}>
+      <span>aa</span>
       <div>plus:{plusValue}</div>
       <div>div:{divValue}</div>
       <div>multiply:{multiplyValue}</div>
